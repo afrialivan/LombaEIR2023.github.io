@@ -1,0 +1,88 @@
+@font-face {
+    font-family: poppins;
+    src: url('../Poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: roboto;
+    src: url('../Roboto/Roboto-Regular.ttf');
+}
+
+:root {
+    --color: #0090D4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: poppins;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* 	background-color: black; */
+    align-items: center;
+    transition: 0.3s;
+    height: 60px;
+}
+
+.nav-logo {
+    color: var(--color);
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color);
+    font-size: 1.3rem;
+}
+
+
+.cours {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.cours img {
+    width: 300px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 4rem;
+    margin-left: 40px;
+}
+
+.content {
+    position: absolute;
+/*     top: 50%; */
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+}
+
+.courses a {
+    text-decoration: none;
+    color: var(--color);
+}
